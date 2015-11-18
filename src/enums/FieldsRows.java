@@ -3,8 +3,8 @@ package enums;
 public enum FieldsRows {
 	PRODUCTO(0),
 	CAMPAÑA (1),
-	LATITUD(2),
-	LONGITUD(3),
+	LONGITUD(2),
+	LATITUD(3),
 	MASA(4);
 
 	private int pos;

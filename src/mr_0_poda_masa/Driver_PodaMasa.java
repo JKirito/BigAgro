@@ -47,8 +47,8 @@ public class Driver_PodaMasa extends Configured implements Tool {
 		job.setReducerClass(Reducer_PodaMasa.class);
 
 		FileInputFormat.setInputPaths(job, new Path(
-				"/media/pruebahadoop/a0eb64d8-ab5e-41a9-8f15-1a9079769f72/javi/Documentos/Monitores rendimiento hackatón agro-datos 2014/CSV/medio.txt"));
-		FileOutputFormat.setOutputPath(job, new Path("/media/pruebahadoop/a0eb64d8-ab5e-41a9-8f15-1a9079769f72/javi/Documentos/Monitores rendimiento hackatón agro-datos 2014/CSV/outputs/podaMasaMR/"));
+				"/media/pruebahadoop/a0eb64d8-ab5e-41a9-8f15-1a9079769f72/javi/Documentos/Monitores rendimiento hackatón agro-datos 2014/CSV/input/serie-0.csv"));
+		FileOutputFormat.setOutputPath(job, new Path("/media/pruebahadoop/a0eb64d8-ab5e-41a9-8f15-1a9079769f72/javi/Documentos/Monitores rendimiento hackatón agro-datos 2014/CSV/outputs/podaMasaMR_serie0/"));
 
 		if (job.waitForCompletion(true)) {
 			long fin = new Date().getTime();

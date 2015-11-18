@@ -34,8 +34,8 @@ public class Driver_Grid {
 
 		// TODO: specify input and output DIRECTORIES
 		FileInputFormat.setInputPaths(job, new Path(
-				"/media/pruebahadoop/a0eb64d8-ab5e-41a9-8f15-1a9079769f72/javi/Documentos/Monitores rendimiento hackatón agro-datos 2014/CSV/outputs/PODA_sortSinMR/part-r-00000"));
-		FileOutputFormat.setOutputPath(job, new Path("/media/pruebahadoop/a0eb64d8-ab5e-41a9-8f15-1a9079769f72/javi/Documentos/Monitores rendimiento hackatón agro-datos 2014/CSV/outputs/Grilla/"));
+				"/media/pruebahadoop/06668E5C668E4C7D/Ubuntu_Share/javi/Documentos/Monitores rendimiento hackatón agro-datos 2014/CSV/outputs/poster/PODA_sortSinMR/part-r-00000"));
+		FileOutputFormat.setOutputPath(job, new Path("/media/pruebahadoop/06668E5C668E4C7D/Ubuntu_Share/javi/Documentos/Monitores rendimiento hackatón agro-datos 2014/CSV/outputs/poster/Grilla/"));
 
 		if (job.waitForCompletion(true)) {
 			long fin = new Date().getTime();

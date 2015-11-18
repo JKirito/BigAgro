@@ -30,8 +30,8 @@ public class SmoothingDriver {
 
 		// TODO: specify input and output DIRECTORIES
 		FileInputFormat.setInputPaths(job, new Path(
-				"/media/pruebahadoop/a0eb64d8-ab5e-41a9-8f15-1a9079769f72/javi/Documentos/Monitores rendimiento hackatón agro-datos 2014/CSV/outputs/Grilla/part-r-00000"));
-		FileOutputFormat.setOutputPath(job, new Path("/media/pruebahadoop/a0eb64d8-ab5e-41a9-8f15-1a9079769f72/javi/Documentos/Monitores rendimiento hackatón agro-datos 2014/CSV/outputs/SmoothingGaussian"));
+				"/media/pruebahadoop/a0eb64d8-ab5e-41a9-8f15-1a9079769f72/javi/Documentos/Monitores rendimiento hackatón agro-datos 2014/CSV/outputs/serie1/Grilla/part-r-00000"));
+		FileOutputFormat.setOutputPath(job, new Path("/media/pruebahadoop/a0eb64d8-ab5e-41a9-8f15-1a9079769f72/javi/Documentos/Monitores rendimiento hackatón agro-datos 2014/CSV/outputs/serie1/SmoothingGaussian"));
 
 		if (job.waitForCompletion(true)) {
 			long fin = new Date().getTime();

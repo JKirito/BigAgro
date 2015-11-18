@@ -145,7 +145,7 @@ public class CamposCSVWritable implements WritableComparable<CamposCSVWritable> 
 
 	@Override
 	public String toString() {
-		return producto + ";" + campaña + ";" + latitud + ";" + longitud + ";" + masa;
+		return producto + ";" + campaña + ";" + longitud + ";" + latitud + ";" + masa;
 	}
 
 	@Override
